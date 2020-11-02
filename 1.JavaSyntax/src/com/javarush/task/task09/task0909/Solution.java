@@ -10,7 +10,7 @@ public class Solution {
             int[] m = new int[2];
             m[8] = 5;//напишите тут ваш код
         } catch (ArrayIndexOutOfBoundsException e) {
-            System.out.println("ArrayIndexOutOfBoundsException: Элемент массива не существует!");
+            System.out.println("ArrayIndexOutOfBoundsException");
         }//напишите тут ваш код
     }
 }
