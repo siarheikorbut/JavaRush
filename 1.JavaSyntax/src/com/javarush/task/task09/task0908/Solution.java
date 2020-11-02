@@ -9,8 +9,8 @@ public class Solution {
         try {
             String s = null;
             String m = s.toLowerCase();//напишите тут ваш код
-        } catch (NullPointerException e){
-            System.out.println("NullPointerException: переменная s = null!");
+        } catch (NullPointerException e) {
+            System.out.println("NullPointerException");
         }//напишите тут ваш код
     }
 }
