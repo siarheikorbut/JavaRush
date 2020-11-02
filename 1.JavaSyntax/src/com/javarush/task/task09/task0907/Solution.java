@@ -8,8 +8,8 @@ public class Solution {
     public static void main(String[] args) {
         try {
             int a = 42 / 0;//напишите тут ваш код
-        } catch (ArithmeticException e){
-            System.out.println("ArithmeticException: Деление на ноль запрещено!");
-        }
+        } catch (ArithmeticException e) {
+            System.out.println("ArithmeticException");
+        }//напишите тут ваш код
     }
 }
