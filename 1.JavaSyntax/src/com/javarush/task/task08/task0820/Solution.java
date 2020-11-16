@@ -1,7 +1,6 @@
 package com.javarush.task.task08.task0820;
 
 import java.util.HashSet;
-import java.util.Iterator;
 import java.util.Set;
 
 /* 
@@ -21,7 +20,7 @@ public class Solution {
     }
 
     public static Set<Cat> createCats() {
-        Set<Cat> catSet = new HashSet<Cat>();
+        Set<Cat> catSet = new HashSet<>();
         for (int i = 0; i < 4; i++) {
             Cat cat = new Cat();
             catSet.add(cat);
