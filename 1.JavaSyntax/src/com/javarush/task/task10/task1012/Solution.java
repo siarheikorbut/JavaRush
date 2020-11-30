@@ -22,7 +22,7 @@ public class Solution {
                 'ч', 'ш', 'щ', 'ъ', 'ы', 'ь', 'э', 'ю', 'я');
 
         // Ввод строк
-        ArrayList<String> list = new ArrayList<String>();
+        ArrayList<String> list = new ArrayList<>();
         for (int i = 0; i < 10; i++) {
             String line = reader.readLine();
             list.add(line.toLowerCase());
