@@ -10,7 +10,7 @@ public class Solution {
     public static void main(String[] args) throws InterruptedException {
         RacingClock clock = new RacingClock();
         Thread.sleep(3500);
-        clock.interrupt();//add your code here - добавь код тут
+        clock.interrupt();
     }
 
     public static class RacingClock extends Thread {
