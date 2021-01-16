@@ -14,30 +14,30 @@ public class Solution {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         String fileName = reader.readLine();
 
-        List<Integer> array = new ArrayList<>();
+        List<Integer> byteArray = new ArrayList<>();
 
         FileInputStream inputStream = new FileInputStream(fileName);
         while (inputStream.available() > 0) {
             int data = inputStream.read();
-            array.add(data);
+            byteArray.add(data);
         }
         inputStream.close();
 
-        Map<Integer, Integer> repeats = new HashMap<>();
-        for (int temp1 : array) {
+        Map<Integer, Integer> byteRepeats = new HashMap<>();
+        for (int byteTemp1 : byteArray) {
             int count = 0;
-            for (int temp2 : array) {
-                if (temp1 == temp2) {
+            for (int byteTemp2 : byteArray) {
+                if (byteTemp1 == byteTemp2) {
                     count++;
                 }
-                repeats.put(temp1, count);
+                byteRepeats.put(byteTemp1, count);
             }
         }
 
-        Integer max = Collections.max(repeats.values());
-        for (Map.Entry<Integer, Integer> repeat : repeats.entrySet()) {
-            if (repeat.getValue().equals(max)) {
-                System.out.print(repeat.getKey() + " ");
+        Integer max = Collections.max(byteRepeats.values());
+        for (Map.Entry<Integer, Integer> byteRepeat : byteRepeats.entrySet()) {
+            if (byteRepeat.getValue().equals(max)) {
+                System.out.print(byteRepeat.getKey() + " ");
             }
         }
     }
